@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cursos",
+  "info": {
+    "name": "Curso",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nome_curso": {
+      "type": "string"
+    },
+    "Grau": {
+      "type": "enumeration",
+      "enum": [
+        "CEsP",
+        "Licenciatura",
+        "Mestrado",
+        "Doutoramento"
+      ]
+    },
+    "idCurso": {
+      "type": "uid"
+    },
+    "universidade": {
+      "model": "universidade",
+      "via": "cursos"
+    },
+    "descripcao": {
+      "type": "richtext"
+    }
+  }
+}

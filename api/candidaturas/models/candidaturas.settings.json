@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "candidaturas",
+  "info": {
+    "name": "Candidaturas",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "candidato": {
+      "model": "candidato"
+    },
+    "universidade": {
+      "model": "universidade"
+    },
+    "anexo": {
+      "model": "anexo"
+    },
+    "user": {
+      "via": "candidaturas",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "Estado": {
+      "type": "string"
+    },
+    "cursos": {
+      "collection": "curso"
+    }
+  }
+}

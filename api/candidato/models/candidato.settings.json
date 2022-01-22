@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "candidatoes",
+  "info": {
+    "name": "Candidato",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nome": {
+      "type": "string"
+    },
+    "Passaporte": {
+      "type": "string"
+    },
+    "contato": {
+      "model": "contato"
+    },
+    "endereco": {
+      "model": "endereco"
+    },
+    "NIF": {
+      "type": "biginteger"
+    },
+    "Data_nascimento": {
+      "type": "date"
+    }
+  }
+}

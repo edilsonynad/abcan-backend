@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contatoes",
+  "info": {
+    "name": "Contato"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Telefone": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    }
+  }
+}

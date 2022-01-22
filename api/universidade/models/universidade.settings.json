@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "universidades",
+  "info": {
+    "name": "Universidade"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nome": {
+      "type": "string"
+    },
+    "idUniversidade": {
+      "type": "uid"
+    },
+    "cursos": {
+      "via": "universidade",
+      "collection": "curso"
+    }
+  }
+}

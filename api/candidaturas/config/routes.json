@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/candidaturas",
+      "handler": "candidaturas.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/candidaturas/me",
+      "handler": "candidaturas.me",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/candidaturas/count",
+      "handler": "candidaturas.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/candidaturas/:id",
+      "handler": "candidaturas.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/candidaturas",
+      "handler": "candidaturas.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/candidaturas/:id",
+      "handler": "candidaturas.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/candidaturas/:id",
+      "handler": "candidaturas.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

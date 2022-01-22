@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "enderecos",
+  "info": {
+    "name": "Endereco",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Ilha": {
+      "type": "string"
+    },
+    "Cidade": {
+      "type": "string"
+    },
+    "Concelho": {
+      "type": "string"
+    },
+    "Zona": {
+      "type": "string"
+    },
+    "Endereco_id": {
+      "type": "uid"
+    }
+  }
+}
